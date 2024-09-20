@@ -1,0 +1,141 @@
+<div class="mt-2 p-2 bg-secondary text-white rounded">
+    <h4>Control Flow Statement </h4>
+    <h3><span>&#64;</span> for,<span>&#64;</span>Switch Case,<span>&#64;</span></h3>    
+</div>
+<div class="row pt-3">
+    <div class="col-3">
+        
+            <div class="p-3 text-center bg-primary">
+                <h4>Div-1</h4>
+        
+        </div>
+    
+    </div>
+    <div class="col-3">
+        
+            <div class=" p-3 text-center bg-warning">
+                <h4>Div-2 warning</h4>
+            </div>
+
+        
+    
+
+        
+        
+      
+    </div>
+    <div class="col-3">
+       
+            <div class=" p-3 text-center bg-warning">
+                <h4>Div-3</h4>
+            </div>
+
+        
+        
+    </div>
+    <div class="col-3">
+        <div class="bg-primary p-3 text-center bg-danger">
+           <h2>Div4</h2>
+             
+        </div>
+    </div>
+</div>
+<div class="row pt-3">
+    <div class="col-3 text-center">
+        <button class="btn btn-danger" >hide</button>
+        <button class="btn btn-primary mx-2" >show</button>
+    </div>
+    <div class="col-3 text-center">
+        <button class="btn btn-success" >Toggle</button>
+    </div>
+    <div class="col-3">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <input type="text" placeholder="Num-1" style="width: 48%;" class="form-control">
+            <input type="text" placeholder="Num-2" style="width: 48%;" class="form-control">
+        </div>
+    </div>
+    <div class="col-3">
+        <div style="display:flex; align-items:center">
+            
+            <select >
+                <option value="">select State</option>
+                <option value="Active">Active</option>
+                <option value="De-Active">De-Active</option>
+                <option value="Pending">Pending</option>
+
+            </select>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            <li></li>
+        </ul>
+
+    </div>
+    <div class="col-3">
+        <div></div>
+    </div>
+    <div class="col-3">
+        <select>
+            <option></option>
+        </select>
+    </div>
+    <div class="col-3">
+        <select>
+            <option></option>
+        </select>
+    </div>
+</div>
+
+
+<div class="row pt-4">
+    <div class="col-5">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Status</th>
+            <th>Gender</th>
+            <th>Total Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let stud of studentList">
+            <td>{{stud.name}}</td>
+            <td>{{stud.city}}</td>
+            <td>
+              <span>{{stud.isActive ?'Active':'De-Active'}}</span>
+              
+            </td>
+            <td>{{stud.gender}}</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar"> {{stud.totalMarks}}</div>
+               
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-5">
+        <div>
+            Div Test
+        </div>
+    </div>
+  </div>
+  
+
+
+
+    
+
+
+
+
+
+
